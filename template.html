@@ -626,8 +626,34 @@
                                             data-id="9b2847b" data-element_type="widget"
                                             data-widget_type="heading.default">
                                             <div class="elementor-widget-container">
-                                                <h2 class="elementor-heading-title elementor-size-large">Всички за
-                                                    Левски
+                                                <h2 class="elementor-heading-title elementor-size-large">Направихме го
+                                                    веднъж
+                                                </h2>
+                                            </div>
+                                        </div>
+                                        {{sold_sectors}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section
+                    class="elementor-element elementor-element-a4d7a08 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section"
+                    data-id="a4d7a08" data-element_type="section"
+                    data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                    <div class="elementor-container elementor-column-gap-default">
+                        <div class="elementor-row">
+                            <div class="elementor-element elementor-element-ac6a7ed elementor-column elementor-col-100 elementor-top-column"
+                                data-id="ac6a7ed" data-element_type="column">
+                                <div class="elementor-column-wrap  elementor-element-populated">
+                                    <div class="elementor-widget-wrap">
+
+                                        <div class="elementor-element elementor-element-9b2847b elementor-widget elementor-widget-heading"
+                                            data-id="9b2847b" data-element_type="widget"
+                                            data-widget_type="heading.default">
+                                            <div class="elementor-widget-container">
+                                                <h2 class="elementor-heading-title elementor-size-large">Можем ли отново
                                                 </h2>
                                             </div>
                                         </div>
@@ -662,14 +688,12 @@
                                                                                     class="elementor-counter-number-prefix"></span>
                                                                                 <span class="elementor-counter-number"
                                                                                     data-duration="2000"
-                                                                                    data-to-value="{{total.sold}}"
+                                                                                    data-to-value="{{current.sold}}"
                                                                                     data-from-value="0"
-                                                                                    data-delimiter=",">{{total.sold}}</span>
-                                                                                <span
-                                                                                    class="elementor-counter-number-suffix"></span>
+                                                                                    data-delimiter=",">{{current.sold}}</span>
+                                                                                <span class="elementor-counter-number-suffix"></span>
                                                                             </div>
-                                                                            <div class="elementor-counter-title">Общо
-                                                                                продадени билети</div>
+                                                                            <div class="elementor-counter-title">Продадени</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -706,42 +730,88 @@
                                                         </div>
                                                     </div>
                                                     <div class="elementor-element elementor-element-6b40be6 elementor-column elementor-col-33 elementor-inner-column"
-                                                    data-id="6b40be6" data-element_type="column">
-                                                    <div class="elementor-column-wrap  elementor-element-populated">
-                                                        <div class="elementor-widget-wrap">
-                                                            <div class="elementor-element elementor-element-809d10c elementor-widget elementor-widget-counter"
-                                                                data-id="809d10c" data-element_type="widget"
-                                                                data-widget_type="counter.default">
-                                                                <div class="elementor-widget-container">
-                                                                    <div class="elementor-counter">
-                                                                        <div
-                                                                            class="elementor-counter-number-wrapper">
-                                                                            <span
-                                                                                class="elementor-counter-number-prefix"></span>
-                                                                            <span class="elementor-counter-number"
-                                                                                data-duration="2000"
-                                                                                data-to-value="{{total.all}}"
-                                                                                data-from-value="{{total.all}}"
-                                                                                data-delimiter=",">{{total.income}}</span>
-                                                                            <span class="elementor-counter-number-suffix">лв.</span>
+                                                        data-id="6b40be6" data-element_type="column">
+                                                        <div class="elementor-column-wrap  elementor-element-populated">
+                                                            <div class="elementor-widget-wrap">
+                                                                <div class="elementor-element elementor-element-809d10c elementor-widget elementor-widget-counter"
+                                                                    data-id="809d10c" data-element_type="widget"
+                                                                    data-widget_type="counter.default">
+                                                                    <div class="elementor-widget-container">
+                                                                        <div class="elementor-counter">
+                                                                            <div
+                                                                                class="elementor-counter-number-wrapper">
+                                                                                <span
+                                                                                    class="elementor-counter-number-prefix"></span>
+                                                                                <span class="elementor-counter-number"
+                                                                                    data-duration="2000"
+                                                                                    data-to-value="{{total.sold}}"
+                                                                                    data-from-value="{{total.sold}}"
+                                                                                    data-delimiter=",">{{total.sold}}</span>
+                                                                                <span class="elementor-counter-number-suffix"></span>
+                                                                            </div>
+                                                                            <div class="elementor-counter-title">Общо продадени</div>
                                                                         </div>
-                                                                        <div class="elementor-counter-title">Приблизителен приход</div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
+                                            </div>
+                                            <div class="elementor-container elementor-column-gap-default">
+                                                <div class="elementor-row">
+                                                    <div class="elementor-element elementor-element-645d1c3 elementor-column elementor-col-33 elementor-inner-column"
+                                                        data-id="645d1c3" data-element_type="column">
+
+                                                    </div>
+                                                    <div class="elementor-element elementor-element-6a0d6bd elementor-column elementor-col-33 elementor-inner-column"
+                                                        data-id="6a0d6bd" data-element_type="column">
+                                                        <div class="elementor-column-wrap  elementor-element-populated">
+                                                            <div class="elementor-widget-wrap">
+                                                                <div class="elementor-element elementor-element-d774b91 elementor-widget elementor-widget-counter"
+                                                                    data-id="d774b91" data-element_type="widget"
+                                                                    data-widget_type="counter.default">
+                                                                    <div class="elementor-widget-container">
+                                                                        <div class="elementor-counter">
+                                                                            <div
+                                                                                class="elementor-counter-number-wrapper">
+                                                                                <span
+                                                                                    class="elementor-counter-number-prefix"></span>
+                                                                                <span class="elementor-counter-number"
+                                                                                    data-duration="2000"
+                                                                                    data-to-value="17836"
+                                                                                    data-from-value="17836"
+                                                                                    data-delimiter=",">240,010</span>
+                                                                                <span
+                                                                                    class="elementor-counter-number-suffix">лв.</span>
+                                                                            </div>
+                                                                            <div class="elementor-counter-title">
+                                                                                Приблизителен приход</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="elementor-element elementor-element-6b40be6 elementor-column elementor-col-33 elementor-inner-column"
+                                                        data-id="6b40be6" data-element_type="column">
+
+                                                    </div>
                                                 </div>
+
                                             </div>
                                             <span style="color: white; font-size: xx-small;">Скайбокс* - Включени са
                                                 само напълно разпродадените (общо 17 места)</span>
                                         </section>
+
+
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+
                 </section>
             </div>
         </div>
