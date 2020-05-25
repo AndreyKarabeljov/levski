@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Poltica;
+    src: url("wp-content/uploads/miso-bold-webfont.woff") format("woff"), url("wp-content/uploads/miso-bold-webfont.ttf")  format("truetype");
+}
+
 .elementor-7 .elementor-element.elementor-element-4dd365f4>.elementor-container {
     max-width: 1140px;
     min-height: 399px;
@@ -11,7 +16,7 @@
 
 .elementor-7 .elementor-element.elementor-element-4dd365f4:not(.elementor-motion-effects-element-type-background),
 .elementor-7 .elementor-element.elementor-element-4dd365f4>.elementor-motion-effects-container>.elementor-motion-effects-layer {
-    background-image: url("https://all4levski.com/wp-content/uploads/2020/02/hero.jpg");
+    background-image: url("https://www.all4levski.com/wp-content/uploads/DGGIR.png");
     background-position: center center;
     background-size: cover;
 }
@@ -25,10 +30,34 @@
 }
 
 .elementor-7 .elementor-element.elementor-element-41bbd15 .elementor-heading-title {
+    font-family: "Poltica";
     color: #ffffff;
     font-size: 55px;
     font-weight: 600;
     text-transform: uppercase;
+    -webkit-text-stroke: 1px black;
+    text-shadow:
+        3px 3px 0 #000,
+      -1px -1px 0 #000,  
+       1px -1px 0 #000,
+       -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+.elementor-7 .elementor-element.elementor-element-41bbd15 .elementor-heading-subtitle {
+    font-family: "Poltica";
+    margin: 10px 0px 0px 0px;
+    color: #ffffff;
+    font-size: 34px;
+    font-weight: 600;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px black;
+    text-shadow:
+        3px 3px 0 #000,
+      -1px -1px 0 #000,  
+       1px -1px 0 #000,
+       -1px 1px 0 #000,
+        1px 1px 0 #000;
 }
 
 .elementor-7 .elementor-element.elementor-element-2c6a0cc1>.elementor-container {
@@ -510,6 +539,11 @@
     }
     .elementor-7 .elementor-element.elementor-element-41bbd15 .elementor-heading-title {
         font-size: 38px;
+        line-height: 1.4em;
+        letter-spacing: 1px;
+    }
+    .elementor-7 .elementor-element.elementor-element-41bbd15 .elementor-heading-subtitle {
+        font-size: 28px;
         line-height: 1.4em;
         letter-spacing: 1px;
     }
